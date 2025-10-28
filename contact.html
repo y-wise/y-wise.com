@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>お問い合わせ｜ワイズ</title>
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="header"></div>
+
+  <div class="content-wrapper">
+    <div class="main-content">
+      <section class="card-section">
+        <h2>お問い合わせ</h2>
+        <p>ご質問・ご相談などお気軽にお寄せください。</p>
+
+        <form action="https://formsubmit.co/wise-y@r2.dion.ne.jp" method="POST" style="max-width: 600px; margin: 30px auto 0; text-align: left;">
+          <!-- スパム対策 -->
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="ワイズ お問い合わせフォーム">
+          <input type="hidden" name="_next" value="thanks.html">
+
+          <div style="margin-bottom: 20px;">
+            <label for="name" style="font-weight: bold; display: block; margin-bottom: 6px;">お名前</label>
+            <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+          </div>
+
+          <div style="margin-bottom: 20px;">
+            <label for="email" style="font-weight: bold; display: block; margin-bottom: 6px;">メールアドレス</label>
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+          </div>
+
+          <div style="margin-bottom: 20px;">
+            <label for="message" style="font-weight: bold; display: block; margin-bottom: 6px;">お問い合わせ内容</label>
+            <textarea id="message" name="message" rows="6" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+          </div>
+
+          <div style="text-align: center;">
+            <button type="submit" style="padding: 12px 24px; background-color: #2e7d32; color: white; font-weight: bold; border: none; border-radius: 4px; cursor: pointer; transition: background-color 0.3s;">
+              送信する
+            </button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <div id="sidebar-container" class="sidebar"></div>
+  </div>
+
+  <div id="footer"></div>
+
+  <script>
+    fetch('sidebar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('sidebar-container').innerHTML = data;
+      });
+
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

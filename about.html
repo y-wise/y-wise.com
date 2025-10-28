@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>会社概要｜ワイズ</title>
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="header"></div>
+
+  <div class="content-wrapper">
+    <div class="main-content">
+      <section class="card-section" style="padding: 40px 20px;">
+        <h2 style="text-align: center; font-size: 2em; color: #2e7d32; margin-bottom: 60px;">会社概要</h2>
+
+       <p style="max-width: 800px; margin: 0 auto 30px; padding: 0 10px; font-size: 1.1em; line-height: 1.8; color: #333; text-align: left; word-break: break-word;">
+  弊社は自然素材を中心にアクアリウムやガーデニング、インテリア、ペット用品など、多彩なシーンでご活用いただける商品を提供しております。東南アジアに拠点を持ち、現地での買い付けから輸入・品質管理まで一貫して自社で行う体制を整えています。自然の風合いや個性を大切にしながらも、安心して使える高品質な商品をお届けできるのが私たちの強みです。
+</p>
+
+
+        <table style="margin: 70px auto; border-collapse: collapse; width: 100%; max-width: 700px; font-size: 1em; color: #333; border: 2px solid #ccc;">
+  <tr>
+    <th style="text-align: left; padding: 12px; background-color: #e8f5e9; width: 30%; border: 1px solid #ccc;">会社名</th>
+    <td style="padding: 12px; background-color: #f9f9f9; border: 1px solid #ccc;">ワイズ Y's A･I･S</td>
+  </tr>
+  <tr>
+    <th style="text-align: left; padding: 12px; background-color: #e8f5e9; border: 1px solid #ccc;">代表者</th>
+    <td style="padding: 12px; background-color: #f9f9f9; border: 1px solid #ccc;">山崎 雅之</td>
+  </tr>
+  <tr>
+    <th style="text-align: left; padding: 12px; background-color: #e8f5e9; border: 1px solid #ccc;">所在地</th>
+    <td style="padding: 12px; background-color: #f9f9f9; border: 1px solid #ccc;">〒350-0001 埼玉県川越市古谷上780-3</td>
+  </tr>
+  <tr>
+    <th style="text-align: left; padding: 12px; background-color: #e8f5e9; border: 1px solid #ccc;">電話番号</th>
+    <td style="padding: 12px; background-color: #f9f9f9; border: 1px solid #ccc;">049-235-8003</td>
+  </tr>
+  <tr>
+    <th style="text-align: left; padding: 12px; background-color: #e8f5e9; border: 1px solid #ccc;">メールアドレス</th>
+    <td style="padding: 12px; background-color: #f9f9f9; border: 1px solid #ccc;">wise-y@r2.dion.ne.jp</td>
+  </tr>
+  <tr>
+    <th style="text-align: left; padding: 12px; background-color: #e8f5e9; border: 1px solid #ccc;">事業内容</th>
+    <td style="padding: 12px; background-color: #f9f9f9; border: 1px solid #ccc;">
+      アクアリウム用品の卸売<br>
+      自然素材商品の輸入・加工・販売
+    </td>
+  </tr>
+</table>
+
+      </section>
+    </div>
+    <div id="sidebar-container" class="sidebar"></div>
+  </div>
+
+  <script>
+    fetch('sidebar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('sidebar-container').innerHTML = data;
+      });
+  </script>
+
+  <div id="footer"></div>
+</body>
+</html>

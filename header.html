@@ -1,0 +1,204 @@
+<header style="background-color: white;">
+  <!-- ロゴ画像 --> 
+<div class="logo" style="text-align: left; padding: 0 20px 10px;">
+<a href="index.html">
+<img src="images/logo.png" alt="ワイズ" style="height: auto; max-height: 100px;">
+ </a>
+ </div>
+
+ <!-- イメージ画像 -->
+ <div class="header-image" style="margin-bottom: 0;">
+ <img src="images/header-banner.png" alt="ヘッダーイメージ"
+ style="width: 100%; height: auto; display: block; margin-bottom: 0;">
+ </div> 
+
+<!-- ナビゲーション -->
+ <nav class="main-nav" style="margin-top: -4px;">
+ <ul style="display: flex; justify-content: center; list-style: none;
+ padding: 0; margin: 0; background-color: #2e7d32;"> 
+<li><a href="index.html">トップ</a></li>
+     <li class="dropdown">
+      <a href="products.html">取扱商品</a>
+      <ul class="dropdown-menu">
+        <li><a href="item_driftwood.html">流木・木</a></li>
+        <li><a href="item_pebble.html">砂利・砂</a></li>
+        <li><a href="item_rock.html">石</a></li>
+        <li><a href="item_other.html">その他</a></li>
+      </ul>
+    </li>
+<li><a href="about.html">会社概要</a></li> 
+<li><a href="contact.html">お問い合わせ</a></li> 
+</ul> 
+</nav> 
+
+<style> 
+.main-nav a { 
+display: block; 
+padding: 20px 30px; 
+color: white; 
+text-decoration: none; 
+font-weight: bold; 
+text-align: center; 
+transition: background-color 0.3s, color 0.3s; 
+} 
+
+.main-nav a:hover { 
+background-color: rgba(255, 255, 255, 0.2); 
+color: #e8f5e9; 
+} 
+
+ .main-nav ul li {
+    position: relative;
+  }
+
+  .main-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #2e7d32;
+    min-width: 160px;
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 100;
+  }
+
+  .main-nav .dropdown-menu li a {
+    padding: 12px 20px;
+    display: block;
+    text-align: left;
+  }
+
+  .main-nav .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .main-nav .dropdown-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #e8f5e9;
+  }
+
+/* レイアウト */ 
+.content-wrapper { 
+display: flex; 
+max-width: 1200px; 
+margin: 0 auto; 
+padding: 40px 20px; 
+} 
+
+.main-content { 
+flex: 1; 
+padding-right: 20px; 
+} 
+
+.sidebar { 
+width: 300px; 
+}
+
+ /* サイドバー */ 
+.sidebar-section { 
+background-color: #f5f5f5; 
+padding: 20px; 
+margin-bottom: 20px; 
+border-radius: 8px; 
+text-align: center; 
+box-shadow: 0 4px 12px rgba(0,0,0,0.25); 
+border: 2px solid #ccc; 
+} 
+
+.sidebar-section h3 { 
+font-size: 1.2em; 
+margin-bottom: 16px; 
+color: #2e7d32; 
+border-bottom: 2px solid #2e7d32; 
+padding-bottom: 6px; 
+display: inline-block; 
+} 
+
+.sidebar-section img { 
+width: 100%; 
+height: auto; 
+margin-bottom: 10px;
+margin-top: 30px; 
+border-radius: 4px; 
+transition: opacity 0.3s; 
+} 
+
+.sidebar-section a:hover img { 
+opacity: 0.8; 
+} 
+
+/* 商品ブロック */ 
+.products-container { 
+display: flex; 
+flex-wrap: wrap; 
+gap: 40px; 
+justify-content: space-between; 
+} 
+
+.products-container > div { 
+flex: 0 1 calc(33.33% - 27px); 
+background-color: #eeeeee; 
+border-radius: 8px; 
+box-shadow: 0 1px 4px rgba(0,0,0,0.1); 
+padding: 20px; box-sizing: border-box; 
+} 
+
+.products-container img {
+ width: 100%; 
+height: auto; 
+border-radius: 4px; 
+display: block;
+ } 
+
+/* カード風セクション */ 
+.card-section {
+ background-color: #fff; 
+border-radius: 8px; 
+box-shadow: 0 4px 12px rgba(0,0,0,0.25); 
+border: 2px solid #ccc; 
+padding: 60px 20px; 
+margin-bottom: 40px; 
+max-width: 1000px; 
+margin-left: auto; 
+margin-right: auto; 
+text-align: center; 
+} 
+
+.card-section h2 { 
+font-size: 2em; 
+color: #2e7d32; 
+margin-bottom: 50px; 
+border-bottom: 2px solid #2e7d32; 
+display: inline-block; 
+padding-bottom: 6px; 
+} 
+
+.card-section p { 
+font-size: 1.1em; 
+line-height: 1.8; 
+color: #333; 
+max-width: 800px; 
+margin: 0 auto; 
+} 
+
+.card-section a { 
+display: inline-block; 
+padding: 12px 24px; 
+background-color: #2e7d32; 
+color: white; 
+text-decoration: none; 
+border-radius: 4px; 
+font-weight: bold; 
+transition: background-color 0.3s;
+margin-top: 60px; 
+} 
+
+.card-section a:hover { 
+background-color: #388e3c; 
+} 
+</style> 
+</header>

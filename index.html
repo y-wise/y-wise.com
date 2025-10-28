@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ワイズ｜トップページ</title>
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="header"></div>
+
+ <div class="content-wrapper">
+  <div class="main-content">
+
+    <section class="card-section">
+      <h2>自然と暮らしをつなぐ</h2>
+      <p>
+        弊社は自然素材の魅力を活かし、暮らしに彩りを添える商品をご提供しています。<br>
+        アクアリウムやガーデニング、インテリア、ペット用など幅広い用途に対応したラインナップで、日々の暮らしを華やかに演出します。
+      </p>
+      <a href="about.html">会社概要を見る</a>
+    </section>
+
+    <section class="card-section">
+      <h2>主な取扱商品</h2>
+      <div class="products-container">
+        <div>
+          <img src="images/driftwood_branch.jpg" alt="枝流木" loading="lazy">
+          <h3>天然枝流木<br>（アクアリウム）</h3>
+          <p>水槽に自然の風景を演出する、天然の枝流木。</p>
+        </div>
+        <div>
+          <img src="images/ohiso.jpg" alt="大磯砂" loading="lazy">
+          <h3>底砂・砂利</h3>
+          <p>水槽用の底砂からガーデニング用の砂利など幅広い用途。</p>
+        </div>
+        <div>
+          <img src="images/woodstone.jpg" alt="木化石" loading="lazy">
+          <h3>レイアウト用品</h3>
+          <p>水槽内やインテリアとしてのレイアウト用品。</p>
+        </div>
+      </div>
+      <a href="products.html">商品一覧を見る</a>
+    </section>
+
+    <section class="card-section" style="background-color: #f1f8e9;">
+      <h2>お問い合わせ</h2>
+      <p>
+        商品に関するご質問・ご相談など、お気軽にお問い合わせください。<br>
+        ご希望の用途に合わせたご提案も可能です。
+      </p>
+      <a href="contact.html">お問い合わせフォームへ</a>
+    </section>
+
+  </div>
+  <div id="sidebar-container" class="sidebar"></div>
+</div>
+
+<script>
+  fetch('sidebar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('sidebar-container').innerHTML = data;
+    });
+</script>
+
+
+  <div id="footer"></div>
+</body>
+</html>
