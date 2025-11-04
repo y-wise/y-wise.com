@@ -115,9 +115,10 @@ button[type="submit"]:hover {
 
 /* ページ読込時のチラつき防止 */
 #header {
+  width: 100%;
   aspect-ratio: 1260 / 318;
-  background-size: cover;
-  background-position: center;
+  display: block;
+  background: #fff; /* 背景白でチラ見え防止 */
 }
 
 #footer {

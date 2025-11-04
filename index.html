@@ -10,6 +10,15 @@
 </head>
 <body>
   <div id="header"></div>
+  
+  <script>
+  const headerBox = document.getElementById("header");
+  headerBox.innerHTML = '<div style="height:100%;"></div>'; // 仮ボックス
+
+  fetch('header.html')
+    .then(r => r.text())
+    .then(t => headerBox.innerHTML = t);
+  </script>
 
  <div class="content-wrapper">
   <div class="main-content">
