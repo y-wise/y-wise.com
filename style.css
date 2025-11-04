@@ -128,3 +128,17 @@ button[type="submit"]:hover {
 #sidebar-container {
   min-height: 400px;
 }
+
+.header-image {
+  width: 100%;
+  aspect-ratio: 1260 / 318;
+  display: block;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.header-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
