@@ -115,10 +115,15 @@ button[type="submit"]:hover {
 
 /* ページ読込時のチラつき防止 */
 #header {
-  min-height: 90px; /* 実際のヘッダーの高さに合わせる */
+  aspect-ratio: 1260 / 318;
+  background-size: cover;
+  background-position: center;
 }
 
 #footer {
   min-height: 60px;
 }
 
+#sidebar-container {
+  min-height: 400px;
+}
